@@ -15,7 +15,7 @@ export default function Layout() {
       <header className="border-b bg-background flex justify-between items-end w-full">
         <div className="container flex h-14 items-center justify-between bg-[#f72f42] px-12 rounded-xl mt-2 mb-1 w-full">
           <a href="/" className="text-2xl font-bold text-white">
-            Zomato Explorer
+            unbasa-eats Explorer
           </a>
           <Button variant="ghost" size="icon" onClick={toggleTheme}>
             {theme === "dark" ? <Sun className="h-5 w-5" /> : <Moon className="h-5 w-5" />}

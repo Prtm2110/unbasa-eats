@@ -2,7 +2,7 @@
 
 ## Overview
 
-The Zomato Restaurant RAG Chatbot is designed to provide users with information about restaurants, their menus, and features using a Retrieval-Augmented Generation (RAG) approach. The architecture consists of several components that work together to scrape restaurant data, process it into a knowledge base, and serve it through a FastAPI backend.
+The unbasa-eats Restaurant RAG Chatbot is designed to provide users with information about restaurants, their menus, and features using a Retrieval-Augmented Generation (RAG) approach. The architecture consists of several components that work together to scrape restaurant data, process it into a knowledge base, and serve it through a FastAPI backend.
 
 ## Project Structure
 
@@ -101,4 +101,4 @@ The project is organized into several directories and files, each serving a spec
 
 ## Conclusion
 
-The Zomato Restaurant RAG Chatbot is a modular and extensible application that leverages web scraping, AI, and a structured knowledge base to provide users with accurate and relevant restaurant information. The architecture is designed to be user-friendly and maintainable, allowing for easy updates and enhancements in the future.
+The unbasa-eats Restaurant RAG Chatbot is a modular and extensible application that leverages web scraping, AI, and a structured knowledge base to provide users with accurate and relevant restaurant information. The architecture is designed to be user-friendly and maintainable, allowing for easy updates and enhancements in the future.

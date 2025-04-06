@@ -64,8 +64,8 @@ async def lifespan(app: FastAPI):
 
 # Initialize FastAPI app
 app = FastAPI(
-    title="Zomato Restaurant Assistant API",
-    description="API for the Zomato Restaurant RAG Chatbot",
+    title="unbasa-eats Restaurant Assistant API",
+    description="API for the unbasa-eats Restaurant RAG Chatbot",
     version="0.1.0",
     lifespan=lifespan
 )

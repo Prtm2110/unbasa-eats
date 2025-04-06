@@ -39,7 +39,7 @@ def start_backend_server():
     uvicorn.run(app, host=Config.API_HOST, port=Config.API_PORT)
 
 def main():
-    parser = argparse.ArgumentParser(description="Zomato Restaurant Data Scraper & RAG Chatbot")
+    parser = argparse.ArgumentParser(description="unbasa-eats Restaurant Data Scraper & RAG Chatbot")
     parser.add_argument("--scrape", action="store_true", help="Scrape restaurant data")
     parser.add_argument("--build-kb", action="store_true", help="Build knowledge base")
     parser.add_argument("--backend", action="store_true", help="Start the backend API server")

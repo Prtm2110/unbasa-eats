@@ -8,7 +8,7 @@ import "./index.css"
 ReactDOM.createRoot(document.getElementById("root")!).render(
   <React.StrictMode>
     <BrowserRouter>
-      <ThemeProvider defaultTheme="light" storageKey="zomato-theme">
+      <ThemeProvider defaultTheme="light" storageKey="unbasa-eats-theme">
         <App />
       </ThemeProvider>
     </BrowserRouter>

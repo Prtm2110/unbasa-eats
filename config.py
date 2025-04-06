@@ -1,4 +1,4 @@
-"""Configuration module for the Zomato RAG Chatbot project."""
+"""Configuration module for the unbasa-eats RAG Chatbot project."""
 
 import os
 from pathlib import Path
@@ -6,7 +6,7 @@ from typing import List, Dict, Any
 import json
 
 class Config:
-    """Configuration class for the Zomato RAG Chatbot project."""
+    """Configuration class for the unbasa-eats RAG Chatbot project."""
     
     # Environment
     ENV = os.getenv("APP_ENV", "development")

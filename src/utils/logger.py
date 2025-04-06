@@ -1,4 +1,4 @@
-"""Centralized logging configuration for the Zomato RAG Chatbot."""
+"""Centralized logging configuration for the unbasa-eats RAG Chatbot."""
 
 import logging
 import sys
@@ -45,6 +45,6 @@ def setup_logger(
 
 # Create the default application logger
 app_logger = setup_logger(
-    "zomato_bot", 
+    "unbasa-eats_bot", 
     log_file="logs/application.log"
 )

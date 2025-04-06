@@ -1,29 +1,29 @@
-"""Custom exceptions for the Zomato RAG Chatbot."""
+"""Custom exceptions for the unbasa-eats RAG Chatbot."""
 
-class ZomatoBotError(Exception):
-    """Base exception for all Zomato chatbot errors."""
+class unbasa-eatsBotError(Exception):
+    """Base exception for all unbasa-eats chatbot errors."""
     pass
 
-class ScraperError(ZomatoBotError):
+class ScraperError(unbasa-eatsBotError):
     """Raised when there's an error in the web scraping process."""
     pass
 
-class KnowledgeBaseError(ZomatoBotError):
+class KnowledgeBaseError(unbasa-eatsBotError):
     """Raised when there's an error in the knowledge base operations."""
     pass
 
-class RetrieverError(ZomatoBotError):
+class RetrieverError(unbasa-eatsBotError):
     """Raised when there's an error in retrieving documents."""
     pass
 
-class GeneratorError(ZomatoBotError):
+class GeneratorError(unbasa-eatsBotError):
     """Raised when there's an error in generating responses."""
     pass
 
-class ConfigError(ZomatoBotError):
+class ConfigError(unbasa-eatsBotError):
     """Raised when there's an error in configuration."""
     pass
 
-class APIError(ZomatoBotError):
+class APIError(unbasa-eatsBotError):
     """Raised when there's an error in the API."""
     pass
