@@ -12,7 +12,6 @@ logger = setup_logger(__name__)
 def setup_directories():
     """Set up the necessary directories"""
     Path("data/raw").mkdir(parents=True, exist_ok=True)
-    Path("data/processed").mkdir(parents=True, exist_ok=True)
     Path("models").mkdir(exist_ok=True)
     Path("models/index").mkdir(exist_ok=True)
 
@@ -21,6 +20,7 @@ def scrape_data():
     logger.info("Starting data scraping...")
     scraper = RestaurantScraper(urls=Config.SCRAPER_URLS)
     scraper.scrape()
+    scraper.save_data(Config.RESTAURANT_DATA_FILE)
     logger.info("Data scraping completed!")
 
 def build_knowledge_base():
