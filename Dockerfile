@@ -1,25 +1,11 @@
-FROM python:3-alpine
+FROM python:3.13-alpine
 
 # Set working directory
 WORKDIR /app
 
-# Install Node.js for frontend build
-RUN apt-get update && \
-    apt-get install -y curl && \
-    curl -fsSL https://deb.nodesource.com/setup_18.x | bash - && \
-    apt-get install -y nodejs && \
-    apt-get clean && \
-    rm -rf /var/lib/apt/lists/*
-
 # Copy requirements and install Python dependencies
 COPY requirements.txt .
-RUN pip install --no-cache-dir -r requirements.txt
-
-# Copy frontend files and build
-COPY frontend/ ./frontend/
-RUN cd frontend && \
-    npm install && \
-    npm run build
+RUN pip install -r requirements.txt
 
 # Copy the rest of the application
 COPY . .
@@ -31,4 +17,4 @@ RUN mkdir -p data/raw data/processed logs
 EXPOSE 8000
 
 # Command to run the application
-CMD [ "python", "main.py", "--backend" ]
+CMD [ "python3", "main.py", "--backend" ]
