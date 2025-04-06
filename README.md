@@ -75,11 +75,3 @@ This project is licensed under the MIT License. See the [LICENSE](LICENSE) file 
 
 This project was inspired by the need for a comprehensive restaurant data scraping and analysis tool. Special thanks to the open-source community for their contributions and support.
 
-## Contact
-
-For any inquiries or feedback, please contact the project maintainer at [prashantyadav.site](https://prashantyadav.site).
-
-## Author
-
-- [Prashant Yadav](https://github.com/0PrashantYadav0)
-- [LinkedIn](https://www.linkedin.com/in/prashantyadav097/)
